@@ -5,12 +5,14 @@
 
 MainMenu::MainMenu() {
     _menuItems = {
+        &myappsMenu,
         &wifiMenu,
         &bleMenu,
         &rfMenu,
         &rfidMenu,
         &irMenu,
         &fmMenu,
+        
     #if defined(USE_NRF24_VIA_SPI)
         &nrf24Menu,
     #endif

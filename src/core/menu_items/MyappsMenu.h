@@ -1,16 +1,17 @@
-#ifndef __UTIL_MENU_H__
-#define __UTIL_MENU_H__
+#ifndef __MYAPPS_MENU_H__
+#define __MYAPPS_MENU_H__
 
 #include "MenuItemInterface.h"
 
-class UtilMenu : public MenuItemInterface {
+
+class MyAppsMenu : public MenuItemInterface {
 public:
     void optionsMenu(void);
     void draw(void);
     String getName(void);
 
 private:
-    String _name = "Util";
+    String _name = "MyApps";
     void configMenu(void);
 };
 
