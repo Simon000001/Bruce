@@ -4,7 +4,7 @@
 
 void MyAppsMenu::optionsMenu() {
   options = {
-    {"bubble level",        [=]() {  }},
+    {"bubble level",        [=]() { bubble_start(); }},
     {"Main Menu",           [=]() { backToMenu(); }}
   };
   delay(200);
